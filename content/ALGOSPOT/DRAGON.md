@@ -1,5 +1,5 @@
 # 문제
-- [KLIS]](https://www.algospot.com/judge/problem/read/KLIS)
+- [DRAGON]]](https://www.algospot.com/judge/problem/read/DRAGON)
 
 ## 코드
 ```javascript
