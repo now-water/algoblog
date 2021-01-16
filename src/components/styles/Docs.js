@@ -1,4 +1,7 @@
 import styled from '@emotion/styled';
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Poor+Story&display=swap');
+</style>
 
 export const StyledHeading = styled('h1')`
   font-size: 32px;
@@ -15,7 +18,6 @@ export const StyledHeading = styled('h1')`
 export const Edit = styled('div')`
   padding: 1rem 1.5rem;
   text-align: right;
-
   a {
     font-size: 14px;
     font-weight: 500;
@@ -39,8 +41,9 @@ export const Edit = styled('div')`
 `;
 
 export const StyledMainWrapper = styled.div`
-  max-width: 750px;
+  max-width: 1300px;
   color: ${props => props.theme.colors.text};
+
 
   ul,
   ol {
