@@ -24,6 +24,7 @@ if (isSearchEnabled && config.header.search.indexName) {
 }
 
 import Sidebar from './sidebar';
+import { Font } from 'styled-icons/boxicons-regular';
 
 const LoadableComponent = Loadable({
   loader: () => import('./search/index'),
@@ -90,7 +91,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
         },
       } = data;
 
-      const finalLogoLink = logo.link !== '' ? logo.link : 'https://hasura.io/';
+      const finalLogoLink = "http://www.nowwater.netlify.app";//logo.link !== '' ? logo.link : 'http://www.nowwater.netlify.app';
 
       return (
         <div className={'navBarWrapper'}>
@@ -99,14 +100,13 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
               <Link to={finalLogoLink} className={'navBarBrand'}>
                 <img
                   className={'img-responsive displayInline'}
-                  src={logo.image !== '' ? logo.image : logoImg}
+                  src={"/web-programming.png"} //{logo.image !== '' ? logo.image : logoImg}
                   alt={'logo'}
+                  width={'15px'}
+                  height={'65px'}
                 />
               </Link>
-              <div
-                className={'headerTitle displayInline'}
-                dangerouslySetInnerHTML={{ __html: headerTitle }}
-              />
+              <a href="https://nowwater.netlify.app" style={{color: "white", fontWeight:"bold", marginLeft:"50px"}}>현수의 알고리즘 세상</a>
             </div>
             {config.header.social ? (
               <ul
@@ -173,7 +173,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                 {githubUrl !== '' ? (
                   <li className={'githubBtn'}>
                     <GitHubButton
-                      href={githubUrl}
+                      href="https://github.com/nowwater/algoblog/"
                       data-show-count="true"
                       aria-label="Star on GitHub"
                     >
