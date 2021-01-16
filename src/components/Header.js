@@ -5,6 +5,7 @@ import GitHubButton from 'react-github-btn';
 import Link from './link';
 import Loadable from 'react-loadable';
 
+import myIcon from './images/web-programming.png';
 import config from '../../config.js';
 import LoadingProvider from './mdxComponents/loading';
 import { DarkModeSwitch } from './DarkModeSwitch';
@@ -100,7 +101,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
               <Link to={finalLogoLink} className={'navBarBrand'}>
                 <img
                   className={'img-responsive displayInline'}
-                  src={"/web-programming.png"} //{logo.image !== '' ? logo.image : logoImg}
+                  src={myIcon}
                   alt={'logo'}
                   width={'15px'}
                   height={'65px'}
