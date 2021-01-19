@@ -92,7 +92,13 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
         },
       } = data;
 
-      const finalLogoLink = "http://www.nowwater.netlify.app";//logo.link !== '' ? logo.link : 'http://www.nowwater.netlify.app';
+      const finalLogoLink = "https://www.nowwater.netlify.app";//logo.link !== '' ? logo.link : 'http://www.nowwater.netlify.app';
+      const myStyle = {
+        fontSize: "25px",
+        color: "white",
+        fontWeight:"bold", 
+        marginLeft:"50px"
+      };
 
       return (
         <div className={'navBarWrapper'}>
@@ -107,7 +113,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                   height={'65px'}
                 />
               </Link>
-              <a href="https://nowwater.netlify.app" style={{color: "white", fontWeight:"bold", marginLeft:"50px"}}>현수의 알고리즘 세상</a>
+              <a href="https://nowwater.netlify.app" style={myStyle}> 만렙 개발자 키우기 </a>
             </div>
             {config.header.social ? (
               <ul
