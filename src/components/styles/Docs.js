@@ -1,7 +1,5 @@
 import styled from '@emotion/styled';
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Poor+Story&display=swap');
-</style>
+import './App.css';
 
 export const StyledHeading = styled('h1')`
   font-size: 32px;
@@ -43,7 +41,6 @@ export const Edit = styled('div')`
 export const StyledMainWrapper = styled.div`
   max-width: 1300px;
   color: ${props => props.theme.colors.text};
-
 
   ul,
   ol {
