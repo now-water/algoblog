@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import './App.css';
 
 export const StyledHeading = styled('h1')`
   font-size: 32px;

@@ -1,10 +1,8 @@
 ---
-title: 'Spring Boot JPA'
+title: 'Spring Boot JPA(Java Persistence API)'
 metaTitle: "Nowwater's blog"
 metaDescription: 'JPA 를 공부하고 정리한 곳입니다.'
 ---
-
-# Spring Boot JPA(Java Persistence API)
 
 > 사용한 교재 : 자바 ORM 표준 JPA 프로그래밍, 김영한 지음
 >
@@ -12,7 +10,7 @@ metaDescription: 'JPA 를 공부하고 정리한 곳입니다.'
 
 ![image](https://user-images.githubusercontent.com/51476083/105198860-795d5280-5b81-11eb-882f-c4d0daf640bb.png)
 
-### 📝 목표
+# 📝 목표
 
 - 자바 ORM 표준 JPA는 SQL 작성 없이 객체를 데이터베이스에 직접 저장할 수 있게 도와주고, 객체와 관계형 데이터베이스의 차이도 중간에서 해결해준다.
 
@@ -49,7 +47,7 @@ metaDescription: 'JPA 를 공부하고 정리한 곳입니다.'
 > - N:M 매핑 대신 1:N, N:1 매핑
 > - 지연 로딩
 
-### 🔥 학습 방법 🔥
+# 🔥 학습 방법 🔥
 
 - 이틀에 챕터별로 한 장씩 정리한다.
 
@@ -57,7 +55,7 @@ metaDescription: 'JPA 를 공부하고 정리한 곳입니다.'
 
 - 실습도 진행하면서 배운 내용을 적용해서 실제로 웹 애플리케이션을 제작한다.
 
-### 📋 목차
+# 📋 목차
 
 - 1장. JPA 소개
 - 2장. JPA 시작
