@@ -12,6 +12,15 @@
 - 엔티티를 기반으로 쿼리 타입이라는 쿼리용 클래스를 생성해야 한다. 쿼리 타입 생성용 플러그인 추가!
 
 #### <필요 라이브러리>
+
+## Gradle
+1. build.gradle 에서
+`plugins {id "com.ewerk.gradle.plugins.querydsl" version "1.0.10"}`
+
+
+2. gradle -> other -> compileQuerydsl 을 실행하면 .build/generated/ 에 Q.. 클래스 파일들이 생성된다.
+
+## Maven
 ```java
 <dependency>
     <groupId>com.mysema.querydsl</groupId>
