@@ -236,17 +236,19 @@ log 의 형태를 설정, 로그 메세지가 출력될 대상을 결정하는 �
 
 ---
 ### ETC
-#### <file>
+#### file
 기록할 파일명과 경로를 설정한다.
 
-#### <rollingPolicy class>
+#### rollingPolicy class
 ch.qos.logback.core.rolling.TimeBasedRollingPolicy => 일자별 적용
 ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP => 일자별 + 크기별 적용
 
-#### <fileNamePattern>
+
+#### fileNamePattern
 파일 쓰기가 종료된 log 파일명의 패턴을 지정. `.gz`, `.zip`으로 자동 압축 가능
 
-#### <maxFileSize>
+
+#### maxFileSize
 - 한 파일당 최대 파일 용량을 지정
 
 
@@ -255,18 +257,19 @@ ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP => 일자별 + 크기별 적�
 
 - 용량 단위는 `KB`, `MB`, `GB` 3가지 지정 가능
 
-#### <maxHistory>
+#### maxHistory
 최대 파일 생성 개수
 
 `ex) maxHistory 가 30이고, Rolling 정책을 일 단위로 하면 30일동안만 저장되고, 월 단위로 하면 30개월간 저장
 
 
-#### <Filter>
+#### Filter
 해당 패키지에 반드시 로그를 찍지 않고 필터링이 필요한 경우에 사용하는 기능
 
 `ex) 레벨 필터를 추가해서 error 단계인 로그만 찍도록 설정 가능`
 
 ```java
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 60초마다 설정 파일의 변경을 확인 하여 변경시 갱신 -->
 <configuration scan="true" scanPeriod="60 seconds">
