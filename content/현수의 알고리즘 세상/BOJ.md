@@ -1,6 +1,6 @@
 ---
 title: 'BOJ'
-metaTitle: "Nowwater's blog"
+metaTitle: '만렙 개발자 키우기'
 metaDescription: '백준 온라인 저지 알고리즘 문제풀이입니다.'
 ---
 

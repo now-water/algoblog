@@ -1,6 +1,6 @@
 ---
 title: 'Spring Boot JPA(Java Persistence API)'
-metaTitle: "Nowwater's blog"
+metaTitle: '만렙 개발자 키우기'
 metaDescription: 'JPA 를 공부하고 정리한 곳입니다.'
 ---
 

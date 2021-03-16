@@ -92,7 +92,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
         },
       } = data;
 
-      const finalLogoLink = "https://www.nowwater.netlify.app";//logo.link !== '' ? logo.link : 'http://www.nowwater.netlify.app';
+      const finalLogoLink = "https://nowwatersblog.com";//logo.link !== '' ? logo.link : 'http://www.nowwater.netlify.app';
       const myStyle = {
         fontSize: "25px",
         color: "white",
