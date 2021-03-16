@@ -1,7 +1,7 @@
 const config = {
   gatsby: {
     pathPrefix: '/',
-    siteUrl: 'https://github.com/nowwater/algoblog',
+    siteUrl: 'https://github.com/nowwater/algoblog/tree/master/content',
     gaTrackingId: null,
     trailingSlash: false,
   },
