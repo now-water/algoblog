@@ -9,6 +9,7 @@ import myIcon from './images/web-programming.png';
 import config from '../../config.js';
 import LoadingProvider from './mdxComponents/loading';
 import { DarkModeSwitch } from './DarkModeSwitch';
+import Search from './search/Search';
 
 const help = require('./images/help.svg');
 
@@ -25,12 +26,8 @@ if (isSearchEnabled && config.header.search.indexName) {
 }
 
 import Sidebar from './sidebar';
-import { Font } from 'styled-icons/boxicons-regular';
 
-const LoadableComponent = Loadable({
-  loader: () => import('./search/index'),
-  loading: LoadingProvider,
-});
+
 
 function myFunction() {
   var x = document.getElementById('navbar');
@@ -113,7 +110,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                   height={'65px'}
                 />
               </Link>
-              <a href="https://nowwater.netlify.app" style={myStyle}> 만렙 개발자 키우기 </a>
+              <a href="https://nowwatersblog.com" style={myStyle}> 만렙 개발자 키우기 </a> 
             </div>
             {config.header.social ? (
               <ul

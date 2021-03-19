@@ -5,6 +5,8 @@ import { StaticQuery, graphql } from 'gatsby';
 import config from '../../config';
 import { Sidebar, ListItem } from './styles/Sidebar';
 
+import Search from './search/Search';
+
 const SidebarLayout = ({ location }) => (
   <StaticQuery
     query={graphql`
@@ -63,6 +65,7 @@ const SidebarLayout = ({ location }) => (
               <li className={'rightSideTitle'}>CONTENTS</li>
               {finalNavItems}
             </ul>
+           <Search/>
           </Sidebar>
         );
       } else {

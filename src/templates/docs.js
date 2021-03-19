@@ -93,6 +93,7 @@ export default class MDXRuntimeTest extends Component {
         </Helmet>
         <div className={'titleWrapper'}>
           <StyledHeading>{mdx.fields.title}</StyledHeading>
+          <p>{mdx.frontmatter.date}</p>
           <Edit className={'mobileView'}>
             {docsLocation && (
               <Link className={'gitBtn'} to={'https://github.com/nowwater/algoblog/blob/master/content/'+`${mdx.parent.relativePath}`}>
@@ -136,6 +137,7 @@ export const pageQuery = graphql`
       frontmatter {
         metaTitle
         metaDescription
+        date(formatString: "MMMM DD, YYYY")
       }
     }
     allMdx {

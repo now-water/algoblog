@@ -16,10 +16,10 @@ const config = {
     links: [{ text: '', link: '' }],
     search: {
       enabled: false,
-      indexName: '',
-      algoliaAppId: process.env.GATSBY_ALGOLIA_APP_ID,
-      algoliaSearchKey: process.env.GATSBY_ALGOLIA_SEARCH_KEY,
-      algoliaAdminKey: process.env.ALGOLIA_ADMIN_KEY,
+      indexName: 'index_name',
+      algoliaAppId: 'appid',
+      algoliaSearchKey: 'searchKey',
+      algoliaAdminKey: 'adminKey',
     },
   },
   sidebar: {
@@ -33,8 +33,7 @@ const config = {
     links: [{ text: '', link: '' }],
     frontline: false,
     ignoreIndex: true,
-    title:
-    "<div class='greenCircle'></div><a href='https://hasura.io/learn/graphql/react/introduction/'>react study</a>" //<a href='https://github.com/nowwater/algoblog'>graphql </a><div class='greenCircle'></div><a href='https://hasura.io/learn/graphql/react/introduction/'>react study</a>",
+    title:"<div><span>목차</span></div>"
   },
   siteMetadata: {
     title: '끊임없이 배우고 성장하려는 개발자입니다.',

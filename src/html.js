@@ -23,6 +23,8 @@ export default class HTML extends React.Component {
           ) : null}
           <noscript key="noscript"></noscript>
           {this.props.headComponents}
+
+        
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
