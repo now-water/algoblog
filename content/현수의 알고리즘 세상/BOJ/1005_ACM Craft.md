@@ -1,11 +1,19 @@
+---
+title: '[BOJ] 1005. ACM Craft'
+metaTitle: '1005 ACM Craft'
+metaDescription: '알고리즘 문제를 풀고 정리한 곳입니다.'
+date: '2021-03-19'
+---
+
 # 문제
-- [1005. ACM Craft](https://www.acmicpc.net/problem/1005)
+
+- [1005 ACM Craft](https://www.acmicpc.net/problem/1005)
 
 ## 코드
 
 <details><summary> 코드 보기 </summary>
 
-``` java
+```java
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -69,12 +77,15 @@ public class Q1005 {
     }
 }
 ```
+
 </details>
 
 ## ⭐️느낀점⭐️
+
 > 위상 정렬 문제를 처음 풀어봤다. DFS 로 쑥 드가서 나오면서 저장하는 방식으로 수업 때 배웠던 것 같은데 전혀 다른 방법이어서 조금 당황스러웠다.
 
 ## 풀이 📣
+
 <hr/>
 
 1️⃣ 각 노드들은 진입 차수`inDegree`를 가지고 있고, 노드에서 필요로 하는 시간 `time`도 가지고 있다.
@@ -85,13 +96,11 @@ public class Q1005 {
 
     - 각 노드별로 건너갈 수 있는 노드들을 리스트 안에 저장한다.
 
-
 2️⃣ 진입 차수가 0인 노드만 방문할 수 있다.
 
-    - 진입 차수가 0인 노드를 처음에 큐에 모두 삽입한다. 
+    - 진입 차수가 0인 노드를 처음에 큐에 모두 삽입한다.
 
     - 큐에서 꺼낸 노드에서 갈 수 있는 노드들을 인접 리스트를 통해 차례로 처리한다.
-
 
 3️⃣ 현재 탐색 중인 노드에서 연결된 모든 간선을 제거하고, 건너갈 수 있는 노드 `next` 의 진입 차수를 1만큼 감소시킨다.
 
