@@ -1,4 +1,4 @@
-#Native SQL
+# Native SQL
 
 - JPQL은 표준 SQL이 지원하는 대부분의 문법과 SQL 함수들을 지원하지만 특정 데이터베이스에 종속적인 기능은 지원하지 않는다.
 
@@ -10,23 +10,20 @@
 
 - 때로는 특정 DB에 종속적인 기능이 필요하다. 따라서 JPA는 특정 DB에 종속적인 기능을 사용할 수 있도록 여러 방법들을 열어두었다.
 
-
-- **네이티브 SQL을 사용하면 엔티티를 조회할 수 있고 JPA가 지원하는 영속성 컨텍스트의 기능을 그대로 사용할 수 있다.**
-
+* **네이티브 SQL을 사용하면 엔티티를 조회할 수 있고 JPA가 지원하는 영속성 컨텍스트의 기능을 그대로 사용할 수 있다.**
 
 - 네이티브 SQL은 JPQL이 자동 생성하는 SQL을 수동으로 직접 정의하는 것이다. 따라서 JPA 가 제공하는 기능 대부분을 그대로 사용할 수 있다.
 
-
-- 하지만 관리하기 쉽지 않고 자주 사용하면 특정 데이터베이스에 종속적인 쿼리가 증가해서 이식성이 떨어진다.
-
+* 하지만 관리하기 쉽지 않고 자주 사용하면 특정 데이터베이스에 종속적인 쿼리가 증가해서 이식성이 떨어진다.
 
 - 될 수 있으면 표준 JPQL을 사용하고 기능이 부족하면 차선책으로 JPA 구현체가 제공하는 기능을 사용한다.
 
 ## 네이티브 SQL 사용
+
 - 엔티티 조회
 
   - 실제 데이터베이스 SQL을 사용하며, 위치기반 파라미터만 지원한다. **나머지는 JPQL을 사용할 떄와 같다**. 조회한 엔티티도 영속성 컨텍스트에서 관리된다.
-<br/>
+    <br/>
 
   - 하이버네이트는 이름 기반 파라미터도 사용 가능하다.
 
@@ -44,6 +41,7 @@ List<Member> resultList = nativeQuery.getResultList();
 - 값 조회
 
   - 스칼라 값만 조회하기 때문에 결과를 영속성 컨텍스트가 관리하지 않는다.
+
 ```java
 String sql =
   "SELECT ID, AGE, NAME, TEAM_ID " +
@@ -87,6 +85,7 @@ List<Object[]> resultList = nativeQuery.getResultList();
       System.out.println("orderCount = " + orderCount);
   }
 ```
+
 ```java
 @Entity
 @SqlResultSetMapping(name = "memberWithOrderCount", // 결과 매핑 정의
@@ -95,6 +94,7 @@ List<Object[]> resultList = nativeQuery.getResultList();
 )
 public class Member { ... }
 ```
+
 ```java
 // 표준 명세 예제 - 매핑 정보
 
@@ -122,8 +122,6 @@ Query q = em.createNativeQuery{
 
 - `@NamedNativeQuery` 로 정적 SQL을 작성할 수 있다.`createNamedQuery` 메서드를 사용해서 TypeQuery를 사용할 수 있다.
 
-
-- 네이티브 SQL을 사용해도 Query, TypeQuery(Named 네이티브 쿼리의 경우에만) 를 반환한다. 따라서 JPQL API를 그대로 사용 가능하다. (페이징 처리 API 적용 가능!)
-
+* 네이티브 SQL을 사용해도 Query, TypeQuery(Named 네이티브 쿼리의 경우에만) 를 반환한다. 따라서 JPQL API를 그대로 사용 가능하다. (페이징 처리 API 적용 가능!)
 
 [맨 위로 이동하기](#)
