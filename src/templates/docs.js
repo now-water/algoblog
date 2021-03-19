@@ -138,6 +138,7 @@ export const pageQuery = graphql`
         metaTitle
         metaDescription
         date(formatString: "MMMM DD, YYYY")
+        tags
       }
     }
     allMdx {

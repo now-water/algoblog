@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link, graphql, StaticQuery } from "gatsby";
 
-
 const Search = (props) => {
   const emptyQuery = "";
 
@@ -16,13 +15,14 @@ const Search = (props) => {
     const posts = data.allMdx.edges || [];
 
     const filteredData = posts.filter((post) => {
-      const { metaDescription, metaTitle} = post.node.frontmatter;
-      const { excerpt } = post.node.excerpt;
+      const { metaDescription, metaTitle, tags} = post.node.frontmatter;
+      const { excerpt } = post.node;
+
       return (
-        (metaDescription &&
-          metaDescription.toLowerCase().includes(query.toLowerCase())) ||
+        (metaDescription && metaDescription.toLowerCase().includes(query.toLowerCase())) ||
         (metaTitle && metaTitle.toLowerCase().includes(query.toLowerCase())) ||
-        (excerpt && excerpt.toLowerCase().includes(query.toLowerCase()))
+        (excerpt && excerpt.toLowerCase().includes(query.toLowerCase())) ||
+        (tags && tags.join("").toLowerCase().includes(query.toLowerCase()))
       );
     });
 
@@ -42,7 +42,7 @@ const Search = (props) => {
         const { excerpt } = node;
 
         const { slug } = node.fields;
-        const { metaTitle, date, metaDescription } = node.frontmatter;
+        const { metaTitle, date, metaDescription, tags } = node.frontmatter;
         return (
           <div key={slug} className="search-article">
             <article key={slug}>
@@ -54,7 +54,7 @@ const Search = (props) => {
               <section>
                 <p
                   dangerouslySetInnerHTML={{
-                    __html: metaDescription || excerpt,
+                    __html: excerpt //tags//tags //excerpt //metaDescription || excerpt,
                   }}
                 />
                 <p>
@@ -93,11 +93,12 @@ export default (props) => (
         allMdx(sort: { order: DESC, fields: frontmatter___date }) {
           edges {
             node {
-              excerpt(pruneLength: 200)
+              excerpt(pruneLength: 50)
               frontmatter {
                 metaTitle
                 metaDescription
                 date(formatString: "MMMM DD, YYYY")
+                tags
               }
               fields {
                 id
