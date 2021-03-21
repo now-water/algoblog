@@ -1,7 +1,7 @@
 ---
 title: 'PROGRAMMERS'
-metaTitle: '만렙 개발자 키우기'
-metaDescription: '프로그래머스 IDE 알고리즘 문제풀이입니다.'
+metaTitle: '프로그래머스 채점 사이트'
+metaDescription: '프로그래머스 IDE 알고리즘 채점 사이트입니다.'
 ---
 
 # 구름 IDE

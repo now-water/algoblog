@@ -1,7 +1,7 @@
 ---
 title: 'GOORM'
-metaTitle: '만렙 개발자 키우기'
-metaDescription: '구름 IDE 알고리즘 문제풀이입니다.'
+metaTitle: '구름 IDE 알고리즘 채점 사이트'
+metaDescription: '구름 IDE 알고리즘 채점 사이트'
 ---
 
 # 구름 IDE
