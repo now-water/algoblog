@@ -2,6 +2,7 @@
 title: '[BOJ] 1005. ACM Craft'
 metaTitle: '1005 ACM Craft'
 metaDescription: '알고리즘 문제를 풀고 정리한 곳입니다.'
+tags: ['위상정렬', 'DP', '그래프 탐색']
 date: '2021-03-19'
 ---
 
