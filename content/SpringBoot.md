@@ -1,5 +1,5 @@
 ---
-title: '[Spring Boot] Spring Boot'
+title: 'Spring Boot'
 metaTitle: '만렙 개발자 키우기'
 metaDescription: 'Spring Boot를 정리한 곳입니다.'
 tags: ['Spring JPA']

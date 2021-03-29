@@ -1,5 +1,5 @@
 ---
-title: '[Spring Boot] QueryDSL'
+title: 'QueryDSL'
 metaTitle: '만렙 개발자 키우기'
 metaDescription: 'QueryDSL 을 정리한 곳입니다.'
 tags: ['Spring JPA']

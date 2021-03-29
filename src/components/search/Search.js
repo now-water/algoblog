@@ -42,13 +42,13 @@ const Search = (props) => {
         const { excerpt } = node;
 
         const { slug } = node.fields;
-        const { metaTitle, date, metaDescription, tags } = node.frontmatter;
+        const { title, metaTitle, date, metaDescription, tags } = node.frontmatter;
         return (
           <div key={slug} className="search-article">
             <article key={slug}>
               <header>
                 <h2>
-                  <Link to={slug}>{metaTitle}</Link>
+                  <Link to={slug}>{title}</Link>
                 </h2>
               </header>
               <section>
@@ -95,6 +95,7 @@ export default (props) => (
             node {
               excerpt(pruneLength: 50)
               frontmatter {
+                title
                 metaTitle
                 metaDescription
                 date(formatString: "MMMM DD, YYYY")

@@ -1,3 +1,10 @@
+---
+title: 'Converter'
+metaTitle: '만렙 개발자 키우기'
+metaDescription: 'Converter를 정리한 곳입니다.'
+tags: ['Spring JPA']
+date: '2021-01-28'
+---
 
 # @Converter
 
@@ -36,8 +43,7 @@ public class BooleanTOYNConverter implements AttributeConverter<Boolean, String>
 
 - convertToDatabaseColumn() : 엔티티의 데이터를 데이터베이스 컬럼에 저장할 데이터로 변환. 예제에선 `true`면 `Y`, `false`면 `N`을 반환
 
-
-- convertToEntityAttribute() : DB에서 조회한 컬럼 데이터를 엔티티의 데이터로 변환.`Y`면 `true`, `N` 이면 `false` 반환
+* convertToEntityAttribute() : DB에서 조회한 컬럼 데이터를 엔티티의 데이터로 변환.`Y`면 `true`, `N` 이면 `false` 반환
 
 ---
 
@@ -65,8 +71,6 @@ public class BooleanTOYNConverter implements AttributeConverter<Boolean, String>
 
 - converter : 사용할 컨버터를 지정
 
-
-- attributeName : 컨버터를 적용할 필드를 지정
-
+* attributeName : 컨버터를 적용할 필드를 지정
 
 - disableConversion : 글로벌 컨버터나 상속 받은 컨버터를 사용하지 않는다.

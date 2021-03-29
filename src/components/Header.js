@@ -191,6 +191,9 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                     toggleActiveTheme={toggleActiveTheme}
                   />
                 </li>
+                <li>
+                  
+                </li>
               </ul>
             </div>
           </nav>
@@ -213,7 +216,9 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                 <LoadableComponent collapse={true} indices={searchIndices} />
               </div>
             ) : null}
+
           </StyledBgDiv>
+          
         </div>
       );
     }}

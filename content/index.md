@@ -1,5 +1,5 @@
 ---
-title: '[Intro] 프로필'
+title: 'Introduction'
 metaTitle: '만렙 개발자 키우기'
 metaDescription: '프로필 내용을 정리한 곳입니다..'
 tags: ['Intro']
