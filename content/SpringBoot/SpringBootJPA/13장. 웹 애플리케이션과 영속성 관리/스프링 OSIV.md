@@ -1,5 +1,5 @@
 ---
-title: '[Spring Boot] 스프링 OSIV'
+title: '스프링 OSIV'
 metaTitle: '만렙 개발자 키우기'
 metaDescription: '스프링 OSIV를 정리한 곳입니다.'
 tags: ['Spring JPA']

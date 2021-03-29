@@ -1,8 +1,8 @@
 ---
-title: '[Backend] Interceptor'
+title: 'Interceptor'
 metaTitle: '만렙 개발자 키우기'
 metaDescription: 'Spring Boot 의 Interceptor 개념을 정리하였습니다.'
-tags: ['Spring Boot']
+tags: ['Backend']
 date: '2021-02-02'
 ---
 

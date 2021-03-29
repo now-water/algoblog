@@ -1,5 +1,5 @@
 ---
-title: '[BOJ] 1005. ACM Craft'
+title: '1005. ACM Craft'
 metaTitle: '만렙 개발자 키우기'
 metaDescription: '알고리즘 문제를 풀고 정리한 곳입니다.'
 tags: ['위상정렬', 'DP', '그래프 탐색']

@@ -1,5 +1,5 @@
 ---
-title: '[Spring Boot] WEB 확장'
+title: 'WEB 확장'
 metaTitle: '만렙 개발자 키우기'
 metaDescription: 'WEB 확장을 정리한 곳입니다.'
 tags: ['Spring JPA']

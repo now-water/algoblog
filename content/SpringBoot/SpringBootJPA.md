@@ -1,5 +1,5 @@
 ---
-title: '[Spring Boot] JPA(Java Persistence API)'
+title: 'JPA(Java Persistence API)'
 metaTitle: '[Spring Boot] JPA(Java Persistence API)'
 metaDescription: 'JPA를 공부하고 정리한 곳입니다.'
 tags: ['Spring JPA']

@@ -10,20 +10,17 @@ import config from '../../config.js';
 
 const Wrapper = styled('div')`
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   background: ${({ theme }) => theme.colors.background};
-
   .sideBarUL li a {
     color: ${({ theme }) => theme.colors.text};
   }
-
   .sideBarUL .item > a:hover {
     background-color: #1ed3c6;
     color: #fff !important;
-
     /* background: #F8F8F8 */
   }
-
   @media only screen and (max-width: 767px) {
     display: block;
   }
@@ -31,15 +28,13 @@ const Wrapper = styled('div')`
 
 const Content = styled('main')`
   display: flex;
-  flex-grow: 1;
+  flex-direction: column;
   margin: 0px 88px;
   padding-top: 3rem;
   background: ${({ theme }) => theme.colors.background};
-
   table tr {
     background: ${({ theme }) => theme.colors.background};
   }
-
   @media only screen and (max-width: 1023px) {
     padding-left: 0;
     margin: 0 10px;
