@@ -1,3 +1,11 @@
+---
+title: '[Spring Boot] OSIV'
+metaTitle: '만렙 개발자 키우기'
+metaDescription: 'OSIV를 정리한 곳입니다.'
+tags: ['Spring JPA']
+date: '2021-01-26'
+---
+
 ## OSIV (Open Session In View)
 <small> OSIV 는 하이버네이트에서 사용하는 용어. JPA에서는 OEIV(Open EntityManager In View)라 한다. 하지만 관례상 모두 OSIV 로 부른다 !</small>
 

@@ -1,3 +1,11 @@
+---
+title: '[Backend] Interceptor'
+metaTitle: '만렙 개발자 키우기'
+metaDescription: 'Spring Boot 의 Interceptor 개념을 정리하였습니다.'
+tags: ['Spring Boot']
+date: '2021-02-02'
+---
+
 ### 인터셉터 (Interceptor)
 
 컨트롤러에 들어오는 요청 `HttpRequest` 와 컨트롤러가 응답하는 `HttpResponse`를 가로채는 역할을 한다.

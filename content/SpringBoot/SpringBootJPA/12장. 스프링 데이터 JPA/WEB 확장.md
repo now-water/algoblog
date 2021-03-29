@@ -1,3 +1,11 @@
+---
+title: '[Spring Boot] WEB 확장'
+metaTitle: '만렙 개발자 키우기'
+metaDescription: 'WEB 확장을 정리한 곳입니다.'
+tags: ['Spring JPA']
+date: '2021-01-24'
+---
+
 # WEB 확장
 
 - 스프링 데이터 프로젝트는 스프링 MVC에서 사용할 수 있는 편리한 기능을 제공한다.

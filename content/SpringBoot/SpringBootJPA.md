@@ -1,9 +1,11 @@
 ---
-title: 'Spring Boot JPA(Java Persistence API)'
-metaTitle: 'Spring Boot JPA(Java Persistence API)'
+title: '[Spring Boot] JPA(Java Persistence API)'
+metaTitle: '[Spring Boot] JPA(Java Persistence API)'
 metaDescription: 'JPA를 공부하고 정리한 곳입니다.'
+tags: ['Spring JPA']
 date: '2021-01-21'
 ---
+
 
 > 사용한 교재 : 자바 ORM 표준 JPA 프로그래밍, 김영한 지음
 >

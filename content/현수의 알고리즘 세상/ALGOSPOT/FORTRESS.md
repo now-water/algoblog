@@ -1,3 +1,11 @@
+---
+title: '[ALGOSPOT] FORTRESS'
+metaTitle: '만렙 개발자 키우기'
+metaDescription: '알고리즘 문제를 풀고 정리한 곳입니다.'
+tags: ['기하', '트리']
+date: '2021-01-17'
+---
+
 # 문제
 
 - [FORTRESS](https://www.algospot.com/judge/problem/read/FORTRESS)

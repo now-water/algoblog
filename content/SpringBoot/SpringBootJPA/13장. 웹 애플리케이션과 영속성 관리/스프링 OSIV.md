@@ -1,3 +1,11 @@
+---
+title: '[Spring Boot] 스프링 OSIV'
+metaTitle: '만렙 개발자 키우기'
+metaDescription: '스프링 OSIV를 정리한 곳입니다.'
+tags: ['Spring JPA']
+date: '2021-01-26'
+---
+
 # 스프링 OSIV : 비즈니스 계층 트랜잭션
 : *비즈니스 계층에서 트랜잭션을 사용하는 OSIV*
 

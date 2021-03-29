@@ -1,3 +1,11 @@
+---
+title: '[Spring Boot] NativeSQL'
+metaTitle: '만렙 개발자 키우기'
+metaDescription: 'NativeSQL을 정리한 곳입니다.'
+tags: ['Spring JPA']
+date: '2021-01-26'
+---
+
 # Native SQL
 
 - JPQL은 표준 SQL이 지원하는 대부분의 문법과 SQL 함수들을 지원하지만 특정 데이터베이스에 종속적인 기능은 지원하지 않는다.

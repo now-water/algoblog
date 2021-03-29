@@ -1,7 +1,9 @@
 ---
-title: 'Introduction'
+title: '[Intro] 프로필'
 metaTitle: '만렙 개발자 키우기'
-metaDescription: ' 만렙 개발자 키우기 블로그를 운영하는 권현수입니다.'
+metaDescription: '프로필 내용을 정리한 곳입니다..'
+tags: ['Intro']
+date: '2020-10-09'
 ---
 
 # 프로필

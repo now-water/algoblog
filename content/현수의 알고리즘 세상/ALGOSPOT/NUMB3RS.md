@@ -1,3 +1,11 @@
+---
+title: '[ALGOSPOT] NUMB3RS'
+metaTitle: '만렙 개발자 키우기'
+metaDescription: '알고리즘 문제를 풀고 정리한 곳입니다.'
+tags: ['DP', '확률']
+date: '2021-01-17'
+---
+
 # 문제
 
 - [NUMB3RS](https://www.algospot.com/judge/problem/read/NUMB3RS)

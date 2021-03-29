@@ -1,7 +1,9 @@
 ---
-title: 'BOJ'
-metaTitle: '백준 온라인 채점 사이트'
-metaDescription: '백준 온라인 저지 알고리즘 채점 사이트'
+title: '[BOJ] BOJ'
+metaTitle: '만렙 개발자 키우기'
+metaDescription: '백준 알고리즘 채점 사이트입니다.'
+tags: ['BOJ']
+date: '2021-01-17'
 ---
 
 # Baekjoon Online Judge

@@ -1,7 +1,9 @@
 ---
-title: 'GOORM'
-metaTitle: '구름 IDE 알고리즘 채점 사이트'
-metaDescription: '구름 IDE 알고리즘 채점 사이트'
+title: '[GOORM] Goorm'
+metaTitle: '만렙 개발자 키우기'
+metaDescription: '구름 알고리즘 채점 사이트입니다.'
+tags: ['GOORM']
+date: '2021-01-17'
 ---
 
 # 구름 IDE

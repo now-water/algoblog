@@ -1,3 +1,11 @@
+---
+title: '[Backend] Logback'
+metaTitle: '만렙 개발자 키우기'
+metaDescription: 'Spring Boot 의 Logback 개념을 정리하였습니다.'
+tags: ['Spring Boot']
+date: '2021-03-05'
+---
+
 ### 스프링 부트의 로깅
 
 태초에 스프링은 JCL (Jakarta Commons Logging) 을 사용해서 로깅(Logging)을 구현했다.

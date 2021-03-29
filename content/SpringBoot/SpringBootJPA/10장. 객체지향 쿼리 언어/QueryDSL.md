@@ -1,3 +1,11 @@
+---
+title: '[Spring Boot] QueryDSL'
+metaTitle: '만렙 개발자 키우기'
+metaDescription: 'QueryDSL 을 정리한 곳입니다.'
+tags: ['Spring JPA']
+date: '2021-01-26'
+---
+
 # QueryDSL
 
 - QueryDSL 은 쿼리를 문자가 아닌 코드로 작성해도, 쉽고 간결하며 그 모양도 쿼리와 비슷하게 개발할 수 있는 오픈소스 프로젝트이다.
