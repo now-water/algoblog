@@ -97,3 +97,9 @@ webRTC를 통해 peer와 peer 간에 다음의 데이터들을 주고 받는다.
 
 **받는 입장** <br/>
 > - `RTCPeerConnection.ondatachannel` 의 callback 을 커스텀하게 설정해서, connection 이 성공적으로 이루어진 후에 상대방이 `data channel` 을 통해 어떤 데이터를 보냈을 때의 동작을 설정할 수 있다.
+
+
+<hr/>
+
+### 참고
+[Getting Started With webRTC](https://www.html5rocks.com/ko/tutorials/webrtc/basics/)
