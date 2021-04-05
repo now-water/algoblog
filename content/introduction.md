@@ -23,7 +23,7 @@ date: '2020-10-09'
 - **`Java`, `Spring Boot`, `Problem Solving`에 관심을 가지고 있습니다.**
 
 
-- **시간이 조금 더 많아지면 `Docker`, `Kubernates` 같은 최신 기술도 공부해보고 싶습니다.**
+- **시간이 조금 더 많아지면 `Docker`, `Kubernetes` 같은 최신 기술도 공부해보고 싶습니다.**
 
 <br/> <br/>
 
