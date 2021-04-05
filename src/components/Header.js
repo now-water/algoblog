@@ -93,7 +93,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
       const myStyle = {
         fontSize: "25px",
         color: "white",
-        fontWeight:"bold", 
+        fontWeight:"bold",
         marginLeft:"50px"
       };
 
@@ -110,7 +110,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                   height={'65px'}
                 />
               </Link>
-              <a href="https://nowwatersblog.com" style={myStyle}> 만렙 개발자 키우기 </a> 
+              <a href="https://nowwatersblog.com" style={myStyle}> 만렙 개발자 키우기 </a>
             </div>
             {config.header.social ? (
               <ul
@@ -192,7 +192,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                   />
                 </li>
                 <li>
-                  
+
                 </li>
               </ul>
             </div>
@@ -218,7 +218,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
             ) : null}
 
           </StyledBgDiv>
-          
+
         </div>
       );
     }}

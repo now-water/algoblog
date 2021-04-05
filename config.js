@@ -6,10 +6,10 @@ const config = {
     trailingSlash: false,
   },
   header: {
-    logo: 'https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/brand.svg',
-    logoLink: 'https://hasura.io/learn/',
+    logo: 'src/favicon.ico',
+    logoLink: './favicon.ico',
     title:
-      "<a href='https://github.com/nowwater/algoblog'><img class='img-responsive' src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/learn-logo.svg' alt='Learn logo' /></a>",
+      "<a href='https://github.com/nowwater/algoblog'><img class='img-responsive' src='src/favicon.ico' alt='Learn logo' /></a>",
     githubUrl: 'https://github.com/nowwater/algoblog',
     helpUrl: '',
     tweetText: '',
@@ -40,7 +40,7 @@ const config = {
     description: 'Computer Science & Server engineer',
     ogImage: null,
     docsLocation: 'https://github.com/nowwater',
-    favicon: 'https://graphql-engine-cdn.hasura.io/img/hasura_icon_black.svg',
+    favicon: 'https://nowwatersblog.com/favicon.ico',
   },
   pwa: {
     enabled: false, // disabling this will also remove the existing service worker.
@@ -54,7 +54,7 @@ const config = {
       crossOrigin: 'use-credentials',
       icons: [
         {
-          src: 'src/pwa-512.png',
+          src: 'src/favicon.ico',
           sizes: `512x512`,
           type: `image/png`,
         },
