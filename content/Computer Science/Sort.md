@@ -223,6 +223,46 @@ void insertionSort(int[] arr){
 
 ### 구현
 
+```java
+//== 부분 배열을 정렬, 부분 배열의 크기가 충분히 작지 않으면 순환 호출을 이용해 다시 분할 정복 적용 ==//
+public void quickSort(int[] array, int left, int right) {
+    if(left >= right) return;
+
+    // 분할
+    int pivot = partition();
+
+    // 피벗은 제외한 2개의 부분 배열을 대상으로 순환 호출
+    quickSort(array, left, pivot-1);  // 정복(Conquer)
+    quickSort(array, pivot+1, right); // 정복(Conquer)
+}
+
+//== 입력 배열을 기준으로 비균등하게 2개의 부분 배열로 분할 ==//
+public int partition(int[] array, int left, int right) {
+  /**
+   // 최악의 경우, 개선 방법
+   int mid = (left + right) / 2;
+   swap(array, left, mid);
+   */
+
+  int pivot = array[left]; // 가장 왼쪽값을 피벗으로 설정
+  int i = left, j = right;
+
+  while(i < j) {
+  while(pivot < array[j]) {
+  j--;
+  }
+  while(i < j && pivot >= array[i]){
+  i++;
+  }
+  swap(array, i, j);
+  }
+  array[left] = array[i];
+  array[i] = pivot;
+
+  return i;
+  }
+```
+
 <hr/>
 
 ## Merge Sort
