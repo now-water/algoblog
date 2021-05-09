@@ -1,8 +1,8 @@
 ---
-title: 'NativeSQL'
+title: '(2) NativeSQL'
 metaTitle: '만렙 개발자 키우기'
 metaDescription: 'NativeSQL을 정리한 곳입니다.'
-tags: ['Spring JPA']
+tags: ['Spring Boot JPA']
 date: '2021-01-26'
 ---
 

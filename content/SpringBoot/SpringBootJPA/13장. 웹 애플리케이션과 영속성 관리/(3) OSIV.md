@@ -1,8 +1,8 @@
 ---
-title: 'OSIV'
+title: '(3) OSIV'
 metaTitle: '만렙 개발자 키우기'
 metaDescription: 'OSIV를 정리한 곳입니다.'
-tags: ['Spring JPA']
+tags: ['Spring Boot JPA']
 date: '2021-01-26'
 ---
 

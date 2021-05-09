@@ -1,8 +1,8 @@
 ---
-title: 'Converter'
+title: '(2) Converter'
 metaTitle: '만렙 개발자 키우기'
 metaDescription: 'Converter를 정리한 곳입니다.'
-tags: ['Spring JPA']
+tags: ['Spring Boot JPA']
 date: '2021-01-28'
 ---
 
