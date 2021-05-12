@@ -192,14 +192,15 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                   />
                 </li>
                 <li>
-
+                    <Search/>
                 </li>
               </ul>
             </div>
           </nav>
+          
           <StyledBgDiv isDarkThemeActive={isDarkThemeActive}>
             <div className={'navBarDefault removePadd'}>
-              <span
+              <span  // StyleBgDiv 위에 <Search/> 가 목차있는쪽
                 onClick={myFunction}
                 className={'navBarToggle'}
                 onKeyDown={myFunction}

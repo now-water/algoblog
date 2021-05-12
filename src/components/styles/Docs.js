@@ -36,9 +36,9 @@ export const Edit = styled('div')`
     }
   }
 `;
-
+// 여기 부분이 MDX 너비 막 줄어들고 늘어나는곳!!!!!!!
 export const StyledMainWrapper = styled.div`
-  max-width: 1300px;
+  max-width: 820px;
   color: ${props => props.theme.colors.text};
 
   ul,

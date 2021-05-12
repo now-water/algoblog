@@ -65,7 +65,6 @@ const SidebarLayout = ({ location }) => (
               <li className={'rightSideTitle'}>CONTENTS</li>
               {finalNavItems}
             </ul>
-           <Search/>
           </Sidebar>
         );
       } else {

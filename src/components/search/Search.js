@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link, graphql, StaticQuery } from "gatsby";
+//import { StyledSearchWrapper } from "./SearchStyle";
+import './SearchCSS.css';
 
 const Search = (props) => {
   const emptyQuery = "";
@@ -40,49 +42,54 @@ const Search = (props) => {
       posts &&
       posts.map(({ node }) => {
         const { excerpt } = node;
-
         const { slug } = node.fields;
         const { title, metaTitle, date, metaDescription, tags } = node.frontmatter;
         return (
-          <div key={slug} className="search-article">
+          //<StyledSearchWrapper>
+          <div key={slug} className={"search-article"}>
             <article key={slug}>
               <header>
-                <h2>
+                <h1>
                   <Link to={slug}>{title}</Link>
-                </h2>
+                </h1>
               </header>
               <section>
                 <p
                   dangerouslySetInnerHTML={{
                     __html: excerpt //tags//tags //excerpt //metaDescription || excerpt,
+                    /* 이 p 태그 아래에 다음과 같이 날짜
+                        <p>
+                          <em>{date}</em>
+                        </p>
+                    */
                   }}
                 />
-                <p>
-                  <em>{date}</em>
-                </p>
               </section>
             </article>
           </div>
+          //</StyledSearchWrapper>
         );
       })
     );
   };
 
   return (
-    <div className="search">
+    //<StyledSearchWrapper>
+    <div className={"search"}>
           <input
-            className="form-control form-control-sm ml-3 w-75"
+            className="form-control form-control-sm ml-3 w-500 search-input"
             type="text"
-            placeholder="Search"
+            placeholder="검색 (제목, 내용, 태그)"
             aria-label="Search"
             onChange={handleInputChange}
           />
       {state.query && (
-        <div className="search-result-container">
+        <div className={"search-result"}>
           {renderSearchResults()}
         </div>
       )}
     </div>
+    //</StyledSearchWrapper>
   );
 };
 

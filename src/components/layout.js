@@ -8,6 +8,8 @@ import Sidebar from './sidebar';
 import RightSidebar from './rightSidebar';
 import config from '../../config.js';
 
+import Search from './search/Search';
+
 const Wrapper = styled('div')`
   display: flex;
   flex-direction: row;
@@ -60,8 +62,10 @@ const RightSideBarWidth = styled('div')`
 const Layout = ({ children, location }) => (
   <ThemeProvider location={location}>
     <MDXProvider components={mdxComponents}>
+
       <Wrapper>
         <LeftSideBarWidth className={'hiddenMobile'}>
+
           <Sidebar location={location} />
         </LeftSideBarWidth>
         {config.sidebar.title ? (
