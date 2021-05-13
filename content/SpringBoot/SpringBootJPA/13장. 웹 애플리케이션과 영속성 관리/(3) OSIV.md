@@ -8,7 +8,7 @@ date: '2021-01-26'
 
 ## OSIV (Open Session In View)
 
-<small> OSIV 는 하이버네이트에서 사용하는 용어. JPA에서는 OEIV(Open EntityManager In View)라 한다. 하지만 관례상 모두 OSIV 로 부른다 !</small>
+OSIV 는 하이버네이트에서 사용하는 용어. JPA에서는 OEIV(Open EntityManager In View)라 한다. 하지만 관례상 모두 OSIV 로 부른다 !
 
 결국 모든 문제는 엔티티가 프레젠테이션 계층에서 준영속 상태이기 때문에 발생한다.
 
