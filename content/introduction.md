@@ -1,10 +1,12 @@
 ---
 title: 'Introduction'
 metaTitle: '만렙 개발자 키우기'
-metaDescription: '프로필 내용을 정리한 곳입니다..'
+metaDescription: '프로필 내용을 정리한 곳입니다.'
 tags: ['']
 date: '2020-10-09'
 ---
+
+![image](https://user-images.githubusercontent.com/51476083/118271306-0b57e500-b4fc-11eb-8394-65d6dd981166.png)
 
 # 프로필
 
@@ -34,5 +36,3 @@ date: '2020-10-09'
 - **최근에는 거의 하루종일 컴퓨터 앞에 앉아서 개발만 하고있지만, `헬스` 는 취미이자 의무로 시간 날때마다 꾸준히 하고 있습니다.**
 
 - **돈 벌어서 맛있는 음식을 먹으러 다니고 싶은 마음입니다.**
-
-![image](https://user-images.githubusercontent.com/51476083/118271306-0b57e500-b4fc-11eb-8394-65d6dd981166.png)
