@@ -175,14 +175,12 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                   </li>
                 ) : null}
                 {githubUrl !== '' ? (
-                  <li className={'githubBtn'}>
-                    <GitHubButton
-                      href="https://github.com/nowwater/algoblog/"
-                      data-show-count="true"
-                      aria-label="Star on GitHub"
-                    >
-                      Star
-                    </GitHubButton>
+                  <li style={{marginRight: 30 + 'em', width: 30 + 'em'}}>
+                    <a href="https://hits.seeyoufarm.com">
+
+                      <img style={{width: 13 + 'em', height: 30}} alt="asd" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fnowwatersblog.com&count_bg=%239EA0A0&title_bg=%23A9C743&icon=gradle.svg&icon_color=%23E1DEDE&title=Today/Total&edge_flat=false"/>
+
+                    </a>
                   </li>
                 ) : null}
                 <li>
@@ -197,7 +195,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
               </ul>
             </div>
           </nav>
-          
+
           <StyledBgDiv isDarkThemeActive={isDarkThemeActive}>
             <div className={'navBarDefault removePadd'}>
               <span  // StyleBgDiv 위에 <Search/> 가 목차있는쪽

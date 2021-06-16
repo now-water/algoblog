@@ -1,38 +1,65 @@
 ---
 title: 'Introduction'
 metaTitle: '만렙 개발자 키우기'
-metaDescription: '프로필 내용을 정리한 곳입니다..'
+metaDescription: '프로필 내용을 정리한 곳입니다.'
 tags: ['']
 date: '2020-10-09'
 ---
 
+![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=만렙%20개발자%20키우기&fontSize=50)
+
+<h3 align="center"> 🗽 Development EXP 🗽</h3>
+
+<div text-align="center">
+
+<div style="height: 10%; width:50%; display: inline-block; float:left;">
+
+
+![image](https://github-readme-stats.vercel.app/api?username=nowwater&theme=default')
+
+</div>
+
+<div style="height: 10%; width:50%; display: inline-block; float:left;">
+
+
+[![Solved.ac
+프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=ggolong)](https://solved.ac/ggolong)
+</div>
+
+</div>
+
+<div style="clear:both"> </div>
+
+<br/>
+
+<h3 align="center"> 👨‍💻 Tech Stack 👩‍💻</h3>
+
+<p align="center">
+
+  ![image](https://img.shields.io/badge/Java-007396?style=flat-square&logo=Java&logoColor=white)
+  ![image](https://img.shields.io/badge/SpringBoot-6DB33F?style=flat-square&logo=Spring&logoColor=white)
+  ![image](https://img.shields.io/badge/Hibernate-59666C?style=flat-square&logo=Hibernate&logoColor=white)
+  ![image](https://img.shields.io/badge/Oracle-F80000?style=flat-square&logo=Oracle&logoColor=white)
+  ![image](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white)
+  ![image](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white)
+  ![image](https://img.shields.io/badge/Mysql-E6B91E?style=flat-square&logo=MySql&logoColor=white)
+
+</p>
+
+<br/> <br/>
+
+<br/>
+
+<h3 align="center"> 💌 Contact me 💌 </h3>
+
+<p align="center">
+
+[![Gmail Badge](https://img.shields.io/badge/Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=mailto:nowwater0225@gmail.com)](mailto:nowwater0225@gmail.com)
+
+</p>
+
+<p align="center">
+
 ![image](https://user-images.githubusercontent.com/51476083/118271306-0b57e500-b4fc-11eb-8394-65d6dd981166.png)
 
-# 프로필
-
-<hr/>
-
-**1일, 유의미한 1 commit 을 목표로 삼아 하루 하루 개발자 레벨을 높이기 위해 노력하는 대학생입니다.**
-
-**제가 가진 기술을 통해 많은 사람들에게 편리함을 제공하는 개발자가 되고 싶습니다.**
-
-<br/> <br/>
-
-# Interest
-
-<hr/>
-
-- **`Java`, `Spring Boot`, `Problem Solving`에 관심을 가지고 있습니다.**
-
-
-- **시간이 조금 더 많아지면 `Docker`, `Kubernetes` 같은 최신 기술도 공부해보고 싶습니다.**
-
-<br/> <br/>
-
-# Hobby
-
-<hr/>
-
-- **최근에는 거의 하루종일 컴퓨터 앞에 앉아서 개발만 하고있지만, `헬스` 는 취미이자 의무로 시간 날때마다 꾸준히 하고 있습니다.**
-
-- **돈 벌어서 맛있는 음식을 먹으러 다니고 싶은 마음입니다.**
+</p>
