@@ -22,9 +22,8 @@ date: '2020-10-09'
 
 <div style="height: 10%; width:50%; display: inline-block; float:left;">
 
+<img src="https://github-readme-solvedac.hyp3rflow.vercel.app/api/?handle=ggolong" height="120%"> </img>
 
-[![Solved.ac
-프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=ggolong)](https://solved.ac/ggolong)
 </div>
 
 </div>
