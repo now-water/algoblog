@@ -1,0 +1,134 @@
+---
+metadata:
+  name: 만렙 개발자 키우기
+  short_name: 만렙 개발자 키우기
+  description: 개발 경험치를 쌓아가며 성장하는 개발자의 기록 일지입니다.
+  language: en
+  pathPrefix: '/'
+  siteImage:
+  favicon: '/assets/favicon.png'
+  themeColor: '#ff0000'
+header:
+  enabled: true
+  logo: '/assets/code.svg'
+  logoLink: '/'
+  helpUrl: ''
+  links:
+    - text: test
+      link: https://hits.seeyoufarm.com
+      external: true
+    #- text: BooGi
+    #  link: https://github.com/nowwater
+    #  external: true
+    #- text: Gatsby
+    #  link: https://www.gatsbyjs.org
+    #  external: true
+    #- text: Docs
+    #  link: '/'
+    #  external: false
+sidebar:
+  enabled: true
+  # forcedNavOrder:
+  #   - "/introduction"
+  #   - "/configuration/basic"
+  #   - "/configuration/advanced"
+  # expanded:
+  groups:
+    - order: 1
+      path: '/jpa'
+      title: ':rocket: JPA'
+    - order: 1
+      path: '/springboot'
+      title: '🍃 Spring Boot'
+    - order: 2
+      path: '/backend'
+      title: '🕋 Backend'
+    - order: 3
+      path: '/sc'
+      title: '💻 Computer Science'
+    - order: 4
+      path: '/ps'
+      title: '👩‍💻 Problem Solving'
+  links:
+    - text: BooGi
+      link: https://github.com/nowwater/nowwatersblog
+    - text: React
+      link: https://reactjs.org
+  ignoreIndex: false
+pwa:
+  enabled: true
+  manifest:
+    display: standalone
+    crossOrigin: anonymous
+    icon: '/assets/favicon.png'
+
+social:
+  github: https://github.com/nowwater
+  gmail: nowwater0225@gmail.com
+
+features:
+  darkMode:
+    enabled: true
+    default: false
+  editOnRepo:
+    location: https://github.com/nowwater/nowwatersblog
+    type: github
+    editable: true
+  mermaid:
+    language: 'mermaid'
+    theme: 'dark'
+    options:
+    width: 400
+    height: 300
+  pageProgress:
+    enabled: true
+    includePaths:
+      - '/configuration/settingup/features'
+    excludePaths:
+      - '/'
+    height: 3
+    prependToBody: false
+    color: '#A05EB5'
+  previousNext:
+    enabled: true
+    arrowKeyNavigation: true
+  propagateNetlifyEnv: true
+  rss:
+    enabled: true
+    title: BooGi Docs
+    showIcon: false
+    copyright: '2020, Mateusz Filipowicz'
+    webMaster: 'Mateusz Filipowicz'
+    managingEditor: 'Mateusz Filipowicz'
+    categories:
+      - Docs as Code
+      - GatsbyJS
+    ttl: 60
+    matchRegex: '^/'
+    outputPath: '/rss.xml'
+    generator: 'boogi'
+  scrollTop: true
+  search:
+    enabled: true
+    engine: 'algolia'
+    placeholder: 'Search'
+    startComponent: 'input' # icon
+    excerptSize: 8000
+    debounceTime: 380
+    snippetLength: 23
+    hitsPerPage: 10
+    showStats: true
+    pagination:
+      enabled: true
+      totalPages: 10
+      showPrevious: true
+      showNext: true
+  showMetadata: true
+  toc:
+    show: true
+    depth: 4
+  fullScreenMode:
+    enabled: true
+    hideHeader: true
+    hideToc: true
+    hideSidebar: true
