@@ -90,7 +90,7 @@ const EditOnRepo = ({ repoType, branch, location, path }) => {
       break;
     case 'github':
       icon = require('images/github.svg');
-      link = `${location}/tree/${branch}/${rootDir}/${path}`;
+      link = `${location}/tree/master/${rootDir}/${path}`;
       text += 'Github';
       break;
     case 'bitbucket':
