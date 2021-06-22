@@ -46,7 +46,7 @@ const EditButton = styled(({ className, icon, link, text }) => {
   return (
     <Edit>
       <Link className={className} to={link} css={shadowAround} target={'_blank'}>
-        <img src={icon} alt={'Git Repository'} loading={'lazy'} /> 
+        <img src={icon} alt={'Git Repository'} loading={'lazy'} />
         <span>{text}</span>
       </Link>
     </Edit>
@@ -90,7 +90,7 @@ const EditOnRepo = ({ repoType, branch, location, path }) => {
       break;
     case 'github':
       icon = require('images/github.svg');
-      link = `${location}/edit/${branch}/${rootDir}/${path}`;
+      link = `${location}/tree/${branch}/${rootDir}/${path}`;
       text += 'Github';
       break;
     case 'bitbucket':

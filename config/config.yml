@@ -51,7 +51,7 @@ sidebar:
       title: '👩‍💻 Problem Solving'
   links:
     - text: BooGi
-      link: https://github.com/nowwater/nowwatersblog
+      link: https://github.com/nowwater/algoblog
     - text: React
       link: https://reactjs.org
   ignoreIndex: false
@@ -71,7 +71,7 @@ features:
     enabled: true
     default: false
   editOnRepo:
-    location: https://github.com/nowwater/nowwatersblog
+    location: https://github.com/nowwater/algoblog
     type: github
     editable: true
   mermaid:

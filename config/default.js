@@ -4,7 +4,7 @@ module.exports = {
     short_name: '만렙 개발자 키우기',
     description: '',
     language: 'en',
-    url: 'http://localhost',
+    url: 'https://nowwatersblog.com',
     pathPrefix: '/',
     gaTrackingId: null,
     siteImage: null,
@@ -55,7 +55,7 @@ module.exports = {
   features: {
     editOnRepo: {
       editable: true,
-      location: 'https://github.com/nowwater/nowwatersblog',
+      location: 'https://github.com/nowwater/algoblog',
       type: 'github',
     },
     search: {
