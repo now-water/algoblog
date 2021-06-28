@@ -1,5 +1,5 @@
 ---
-title: 'making Multi module'
+title: '멀티 모듈 구성하기'
 order: 1
 ---
 
