@@ -1,3 +1,12 @@
+## [1.0.23](https://github.com/nowwater/algoblog/compare/v1.0.22...v1.0.23) (2021-07-05)
+
+
+### Bug Fixes
+
+* 오탈자 수정 ([08846b0](https://github.com/nowwater/algoblog/commit/08846b0b22fd82da2f69b30284ddbda5ebbb3664))
+
+
+
 ## [1.0.22](https://github.com/nowwater/algoblog/compare/v1.0.21...v1.0.22) (2021-07-05)
 
 
