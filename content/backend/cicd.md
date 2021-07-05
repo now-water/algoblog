@@ -46,7 +46,7 @@ CI/CD 라는 기술이 있다는 것은 알고 있었지만, 당장 프로젝트
 
 ### 3. CI / CD 무중단 배포 구축
 
-- CI (Continuos Integrity) & CD (Continuos Deploy) pipeline을 구축하여 무중단 배포를 가능하게 한다.
+- CI (Continuous Integration) & CD (Continuous Deploy) pipeline을 구축하여 무중단 배포를 가능하게 한다.
 
 
 ### 서버 아키텍처
