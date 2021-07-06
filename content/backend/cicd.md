@@ -51,7 +51,7 @@ CI/CD 라는 기술이 있다는 것은 알고 있었지만, 당장 프로젝트
 
 ### 서버 아키텍처
 
-![image](https://user-images.githubusercontent.com/51476083/124457499-d57e0100-ddc6-11eb-8972-30ebb30deddd.png)
+![image](https://user-images.githubusercontent.com/51476083/124620989-e0af5a80-deb4-11eb-9148-714e8b649e49.png)
 
 
 
