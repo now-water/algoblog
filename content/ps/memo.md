@@ -1,7 +1,8 @@
 ---
-title: '문제 풀면서 알게된 내용'
+title: 'TIPS'
 metaTitle: '만렙 개발자 키우기'
 metaDescription: '문제를 풀면서 알게된 점과 느낀점, 팁 등을 정리한 곳입니다.'
+order: 5
 tags: ['TIP']
 date: '2021-06-30'
 ---

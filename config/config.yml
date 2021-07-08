@@ -35,25 +35,28 @@ sidebar:
   # expanded:
   groups:
     - order: 1
+      path: '/books'
+      title: '📖 Read Book'
+    - order: 2
       path: '/jpa'
       title: ':rocket: JPA'
-    - order: 1
+    - order: 3
       path: '/springboot'
       title: '🍃 Spring Boot'
-    - order: 2
+    - order: 4
       path: '/backend'
       title: '🕋 Backend'
-    - order: 3
-      path: '/sc'
+    - order: 5
+      path: '/cs'
       title: '💻 Computer Science'
-    - order: 4
+    - order: 6
       path: '/ps'
       title: '👩‍💻 Problem Solving'
-  links:
-    - text: BooGi
-      link: https://github.com/nowwater/algoblog
-    - text: React
-      link: https://reactjs.org
+  #links:
+    #- text: BooGi
+    #  link: https://github.com/nowwater/algoblog
+    #- text: React
+    #  link: https://reactjs.org
   ignoreIndex: false
 pwa:
   enabled: true

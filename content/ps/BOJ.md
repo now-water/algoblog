@@ -2,6 +2,7 @@
 title: 'BOJ'
 metaTitle: '만렙 개발자 키우기'
 metaDescription: '백준 알고리즘 채점 사이트입니다.'
+order: 2
 tags: ['BOJ']
 date: '2021-01-17'
 ---
