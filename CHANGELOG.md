@@ -1,3 +1,12 @@
+## [1.0.25](https://github.com/nowwater/algoblog/compare/v1.0.24...v1.0.25) (2021-07-08)
+
+
+### Bug Fixes
+
+* image to block IP addr ([5db6414](https://github.com/nowwater/algoblog/commit/5db64145670038b1bdb3b6fb89fecacc4e173c3f))
+
+
+
 ## [1.0.24](https://github.com/nowwater/algoblog/compare/v1.0.23...v1.0.24) (2021-07-06)
 
 
