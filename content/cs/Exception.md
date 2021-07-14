@@ -26,9 +26,9 @@ date: '2021-07-11'
 
 이 둘은 간단하게 `RuntimeException` 을 상속하는지 여부로 구분할 수 있다.
 
-- `Checked Exception` : `RuntimeException`을 상속하는 클래스
+- `Checked Exception` : `RuntimeException`을 상속하지 않는 클래스
 
-- `Unchecked Exception` : `RuntimeException`을 상속하지 않는 클래스
+- `Unchecked Exception` : `RuntimeException`을 상속하는 클래스
 
 ![image](https://user-images.githubusercontent.com/51476083/125185092-9126b100-e25d-11eb-91b9-7100753a8b2f.png)
 
