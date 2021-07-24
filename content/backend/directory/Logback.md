@@ -6,7 +6,7 @@ tags: ['Backend']
 date: '2021-03-05'
 ---
 
-### 스프링 부트의 로깅
+## 스프링 부트의 로깅
 
 태초에 스프링은 JCL (Jakarta Commons Logging) 을 사용해서 로깅(Logging)을 구현했다.
 
@@ -24,9 +24,9 @@ date: '2021-03-05'
 
 ---
 
-### Logback
+## Logback
 
-#### 정의
+### 정의
 
 - 자바 오픈소스 로깅 프레임워크, `SLF4J` 의 구현체
 
@@ -38,8 +38,7 @@ date: '2021-03-05'
   - `Logger` <br/>
   - `Appender` <br/>
   - `Encoder` <br/>
-
----
+  
 
 ### 스프링 부트 logback 설정
 
@@ -57,28 +56,28 @@ date: '2021-03-05'
 
 - 스프링 부트에서는 `logback-spring.xml` 을 사용해 Spring이 logback을 구동할 수 있도록 지원해준다.
 
+
 - 이를 이용하여 profile, 즉 배포 환경에 따른(spring.profiles.active 활용) `apllication.xml` 에 설정된 `properties` 를 읽어올 수 있다.
 
-
-    ex)
-    spring.profiles.active=local
-    logback-local.properties => console-logging
-    logback-dev.properties => file-logging
-    logback-prod.properties => file-logging,remote-logging
+      ex)
+      spring.profiles.active=local
+      logback-local.properties => console-logging
+      logback-dev.properties => file-logging
+      logback-prod.properties => file-logging,remote-logging
 
 ---
 
-### 로그 레벨 순서 및 사용 방법
+## 로그 레벨 순서 및 사용 방법
 
 > TRACE < DEBUG < INFO < WARN < ERROR
 
 1. ERROR : 요청을 처리하는 중 오류가 발생한 경우 표시
 
-2) WARN : 처리 가능한 문제, 향후 시스템 에러의 원인이 될 수 있는 경고성 메시지를 나타낸다.
+2. WARN : 처리 가능한 문제, 향후 시스템 에러의 원인이 될 수 있는 경고성 메시지를 나타낸다.
 
 3. INFO : 상태 변경과 같은 정보성 로그를 표시
 
-4) DEBUG : 프로그램을 디버깅하기 위한 정보를 표시
+4. DEBUG : 프로그램을 디버깅하기 위한 정보를 표시
 
 5. TRACE : 추적 레벨은 Debug 보다 훨씬 상세한 정보를 나타낸다.
 
@@ -88,7 +87,7 @@ date: '2021-03-05'
 
 `application.properties` 에 `logging.level.root=레벨` 과 같이 값을 세팅해놓고 설정 가능.
 
-패키지별로 로깅 레벨 지정 가능
+**패키지별로 로깅 레벨 지정 가능**
 
 - 상위 패키지의 디폴트 레벨을 설정하고, 하퓌 패키지들에 대한 각각의 로깅 레벨을 별도로 설정 가능
 
@@ -98,7 +97,7 @@ date: '2021-03-05'
 
 <br/>
 
-#### logger 등록 및 사용 방법
+## logger 등록 및 사용 방법
 
 `LoggerFactory` 에서 로거 객체를 불러온 후, 로거 객체를 이용해서 코드의 원하는 부분에 로그를 찍으면 된다.
 
@@ -121,7 +120,7 @@ public class HomeController {
 
 ---
 
-### 기본 특징
+## 기본 특징
 
 - 대소문자를 구별하지 않는다. `ex) <logger> == <LOGGER>`
 
@@ -143,7 +142,7 @@ public class HomeController {
 
 ---
 
-#### appender
+## appender
 
 log 의 형태를 설정, 로그 메세지가 출력될 대상을 결정하는 요소
 
@@ -161,35 +160,35 @@ log 의 형태를 설정, 로그 메세지가 출력될 대상을 결정하는 �
 
 ---
 
-### root, logger
+## root, logger
 
 설정한 `appender` 를 참조하여 `package` 와 `level`을 설정
 
 <br/>
 
-#### root
+### root
 
 - 전역 설정이라고 볼 수 있다.
 
 - 지역적으로 선언된 `logger` 설정이 있다면 해당 logger 설정이 default로 적용
 
-#### logger
+### logger
 
 - 지역 설정이라고 볼 수 있다.
 
 - `additivity` 값은 root 설정 상속 유무 설정 (default = true)
 
-### property
+## property
 
 설정 파일에서 사용될 변수값 선언
 
-### layout, encoder
+## layout, encoder
 
-#### layout
+### layout
 
 - 로그의 출력 포맷을 지정. `log4j`에서 설정할 때 많이 사용했음.
 
-#### encoder
+### encoder
 
 - `Appender`에 포함되어 사용자가 지정한 형식으로 표현될 로그 메세지를 변환하는 역할 담당
   <br/>
@@ -199,7 +198,7 @@ log 의 형태를 설정, 로그 메세지가 출력될 대상을 결정하는 �
 
 ---
 
-### pattern
+## pattern
 
 **[패턴에 사용되는 요소]**
 
@@ -226,22 +225,22 @@ log 의 형태를 설정, 로그 메세지가 출력될 대상을 결정하는 �
 
 ---
 
-### ETC
+## ETC
 
-#### file
+### file
 
 기록할 파일명과 경로를 설정한다.
 
-#### rollingPolicy class
+### rollingPolicy class
 
 ch.qos.logback.core.rolling.TimeBasedRollingPolicy => 일자별 적용
 ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP => 일자별 + 크기별 적용
 
-#### fileNamePattern
+### fileNamePattern
 
 파일 쓰기가 종료된 log 파일명의 패턴을 지정. `.gz`, `.zip`으로 자동 압축 가능
 
-#### maxFileSize
+### maxFileSize
 
 - 한 파일당 최대 파일 용량을 지정
 
@@ -249,13 +248,13 @@ ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP => 일자별 + 크기별 적�
 
 - 용량 단위는 `KB`, `MB`, `GB` 3가지 지정 가능
 
-#### maxHistory
+### maxHistory
 
 최대 파일 생성 개수
 
 `ex) maxHistory 가 30이고, Rolling 정책을 일 단위로 하면 30일동안만 저장되고, 월 단위로 하면 30개월간 저장
 
-#### Filter
+### Filter
 
 해당 패키지에 반드시 로그를 찍지 않고 필터링이 필요한 경우에 사용하는 기능
 

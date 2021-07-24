@@ -1,12 +1,12 @@
 ---
-title: 'Interceptor'
+title: 'Interceptor & Filter'
 metaTitle: '만렙 개발자 키우기'
 order: 2
 tags: ['Backend']
 date: '2021-02-02'
 ---
 
-### 인터셉터 (Interceptor)
+## 인터셉터 (Interceptor)
 
 컨트롤러에 들어오는 요청 `HttpRequest` 와 컨트롤러가 응답하는 `HttpResponse`를 가로채는 역할을 한다.
 
@@ -26,7 +26,7 @@ date: '2021-02-02'
 
 - 구현 방식 : 메서드를 작성해 구현
 
-#### 환경 설정
+### 환경 설정
 
 모든 요청을 가로채서 `com.gallery.interceptor` 패키지에 있는 `MyInterceptor` 객체를 실행한다.
 
@@ -43,13 +43,13 @@ date: '2021-02-02'
 
 ---
 
-#### 테스트
+### 테스트
 
 Interceptor를 구현하는 방법은 2가지가 존재한다.
 
 1. `HandlerInterceptor` 인터페이스를 구현
 
-2) `HandlerInterceptorAdapter` 클래스를 상속
+2. `HandlerInterceptorAdapter` 클래스를 상속
 
 상속을 받으면 메서드가 이미 구현되어 있어서 사용하기 편하므로 상속받는 방법을 주로 사용한다.
 
@@ -117,21 +117,9 @@ public class myInterceptorController {
 }
 ```
 
-### 메소드별 수행 순서
-
-1. filter (존재할 경우)
-
-2) preHandle
-
-3. controller
-
-4) postHandle
-
-5. afterCompletion
-
 ---
 
-### 필터 (Filter)
+## 필터 (Filter)
 
 인코딩이나 보안 관련 처리와 같은 web app에서 전역적으로 처리해야 하는 로직을 구현하는데 주로 사용된다.
 
@@ -144,3 +132,17 @@ public class myInterceptorController {
 * 설정 위치 : `web.xml`
 
 - 구현 방식 : `web.xml` 설정을 해서 구현
+
+---
+
+## 메소드별 수행 순서
+
+1. filter (존재할 경우)
+
+2. preHandle
+
+3. controller
+
+4. postHandle
+
+5. afterCompletion

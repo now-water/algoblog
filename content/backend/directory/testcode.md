@@ -8,7 +8,7 @@ date: '2021-03-22'
 
 # 테스트 코드
 
-### TDD, Test-Driven Development
+## TDD, Test-Driven Development
 
 매우 짧은 개발 사이클을 반복하는 SW 개발 프로세스 중 하나이다.
 
@@ -25,7 +25,7 @@ TDD 는 테스트가 주도하는 개발이다. 따라서 테스트 코드를 �
 
 ---
 
-### 단위 테스트
+## 단위 테스트
 
 모듈이나 애플리케이션 안에 있는 개별적인 코드 단위가 예상대로 작동하는지 확인하는 반복적인 행위이다.
 
@@ -35,7 +35,7 @@ TDD 는 테스트가 주도하는 개발이다. 따라서 테스트 코드를 �
 
 TDD 와 다르게 테스트 코드를 먼저 작성할 필요가 없으며, 리팩토링도 반드시 포함되지는 않는다.
 
-#### 단위 테스트의 장점
+### 장점
 
 > - 개발 단계 초기에 문제를 발견하게 도와준다.
 >
@@ -55,7 +55,7 @@ TDD 와 다르게 테스트 코드를 먼저 작성할 필요가 없으며, 리�
 
 ---
 
-### 테스트 프레임워크
+## 테스트 프레임워크
 
 **xUnit**
 
@@ -69,9 +69,9 @@ TDD 와 다르게 테스트 코드를 먼저 작성할 필요가 없으며, 리�
 
 ---
 
-### 테스트 코드 작성
+## 테스트 코드 작성
 
-#### SpringWebserviceApplication
+### SpringWebserviceApplication
 
 ```java
 
@@ -93,7 +93,7 @@ public class SpringWebserviceApplication {
 }
 ```
 
-#### HelloController
+### HelloController
 
 ```java
 @RestController // 컨트롤러를 JSON을 반환하는 컨트롤러로 바꿔줌
@@ -106,7 +106,7 @@ public class HelloController {
 }
 ```
 
-#### HelloControllerTest
+### HelloControllerTest
 
 ```java
 package com.nowwater.board.springwebservice;
@@ -148,7 +148,7 @@ public class HelloControllerTest {
 }
 ```
 
-#### HelloControllerTest 실행 결과
+### HelloControllerTest 실행 결과
 
 ![image](https://user-images.githubusercontent.com/51476083/111971898-2fbcc400-8b40-11eb-9b25-1c4014e53713.png)
 
@@ -156,11 +156,11 @@ public class HelloControllerTest {
 
 ---
 
-### Lombok 사용 테스트 코드 작성
+## Lombok 
 
 이제 Lombok 라이브러리를 사용하여 테스트 코드를 작성해본다.
 
-#### Lombok 라이브러리 적용 및 문제 해결
+### Lombok 라이브러리 적용 및 문제 해결
 
 먼저 Lombok 라이브러리를 프로젝트에 적용시켜보자.
 
@@ -170,11 +170,11 @@ public class HelloControllerTest {
 
 1. lombok plugin 설치
 
-2) Setting > Build, Execution, Deployment > Compiler > Annotation Processors > "Enable annotation processing" 체크
+2. Setting > Build, Execution, Deployment > Compiler > Annotation Processors > "Enable annotation processing" 체크
 
 3. Setting > Build, Execution, Deployment > Compiler > Java Compiler > user compiler > "javac" 선택
 
-4) `build.gradle` 에서 아래와 같이 의존성 추가
+4. `build.gradle` 에서 아래와 같이 의존성 추가
 
    ```java
    dependencies{
@@ -187,15 +187,13 @@ public class HelloControllerTest {
    }
    ```
 
-#### 테스트 코드가 실행이 안된다면
-
 만약 이렇게 적용하고 테스트 코드가 실행이 안된다면
 
 `Setting > Build, Execution, Deployment > Build Tools > Gradle > Build and Run Using "IntelliJ" 선택`
 
 해주면 된다 !
 
-#### HelloResponseDto
+### HelloResponseDto
 
 ```java
 package com.nowwater.board.springwebservice.posting.dto;
@@ -215,7 +213,7 @@ public class HelloResponseDto {
 
 ```
 
-#### HelloResponseDtoTest
+### HelloResponseDtoTest
 
 ```java
 package com.nowwater.board.springwebservice.dto;
@@ -251,7 +249,7 @@ public class HelloResponseDtoTest {
 
 ```
 
-#### HelloResponseDtoTest 실행 결과
+### HelloResponseDtoTest 실행 결과
 
 ![image](https://user-images.githubusercontent.com/51476083/111973974-63005280-8b42-11eb-91cf-6c2c580ace88.png)
 
@@ -259,9 +257,9 @@ public class HelloResponseDtoTest {
 
 ---
 
-### HelloController 에서 DTO 사용하는 테스트
+## HelloController 에서 DTO 사용하는 테스트
 
-#### HelloController
+### HelloController
 
 ```java
 package com.nowwater.board.springwebservice.posting;
@@ -283,7 +281,7 @@ public class HelloController {
 }
 ```
 
-#### HelloControllerTest
+### HelloControllerTest
 
 ```java
 package com.nowwater.board.springwebservice;
@@ -334,7 +332,7 @@ public class HelloControllerTest {
 
 ```
 
-#### HelloControllerTest 테스트 결과
+### HelloControllerTest 테스트 결과
 
 ![image](https://user-images.githubusercontent.com/51476083/111974743-1cf7be80-8b43-11eb-8281-b13a6d008862.png)
 
