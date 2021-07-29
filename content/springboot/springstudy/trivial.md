@@ -8,15 +8,17 @@ date: '2021-06-28'
 
 두 어노테이션의 가장 큰 차이점은 `HTTP Response Body`가 생성되는 방식이다.
 
-# @Controller
+# @Controller vs @RestController
 
-## View 반환
+## @Controller
+
+### View 반환
 
 전통적인 Spring MVC 의 컨트롤러이다. **주로 View를 반환하기 위해 사용한다.** 이때 `ViewResolver`가 적절한 View를 찾아서 렌더링해서 반환한다.
 
 ![image](https://user-images.githubusercontent.com/51476083/123594303-81a17400-d82a-11eb-99c8-647dd9b293c5.png)
 
-## Data 반환
+### Data 반환
 
 이때 `@ResponseBody` 어노테이션을 사용하면 View 말고 직접 Data를 반환시켜줄 수 있다.
 
@@ -50,7 +52,7 @@ public @ResponseBody User info(@RequestBody User user){
 
 ---
 
-# @RestController
+## @RestController
 
 `@RestController` 를 붙이면 모든 메서드에서는 `@ResponseBody` 어노테이션이 기본으로 작동한다.
 
