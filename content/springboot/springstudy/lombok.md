@@ -207,8 +207,135 @@ System.out.println(me);
 
 ---
 
+## 실제 프로젝트 리팩토링 적용
+
+2021년 하반기부터 컴퓨터학부생을 대상으로 서비스 예정인 `강의실 좌석 예약 시스템 구축 프로젝트`를 진행 중인데, 이번에 공부한 `lombok` 사용법을 실제로 적용하여 다음과 같이 리팩토링을 실시하였다.
+
+### 리팩토링 전 코드
+
+```java
+@Entity
+@NoArgsConstructor // 문제 상황 1. 기본 생성자의 접근 제어자가 불명확함 
+@AllArgsConstructor // 문제 상황 2. 부작용이 많은 모든 파라미터를 받는 생성자 자동 생성
+@Builder // 문제 상황 3. 클래스 단위의 Builder 패턴 적용
+@Getter
+public class Board extends BaseTimeEntity {
+
+    @Id
+    @GeneratedValue
+    @Column(name="board_id")
+    private Long id;
+
+    @Enumerated(EnumType.STRING)
+    private Category category;
+
+    private String title;
+
+    private String content;
+
+    private String author;
+
+    @ManyToOne
+    @JoinColumn(name="member_id")
+    private Member member;
+
+    @Builder.Default @OneToMany(mappedBy="board") // 문제 상황 4. 잘못된 @Builder 위치로 인해 추가해야했던 초기화를 위해 불필요한 코드  
+    private List<Comment> commentList = new ArrayList<Comment>();
+
+    public void edit(BoardForm boardForm){
+        content = changedInfo(content, boardForm.getContent());
+    }
+
+    private String changedInfo(String original, String changed){
+        return (changed == null || changed.equals("")) ? original : changed;
+    }
+
+    public void setMember(Member member){
+        if(this.member!=null){
+            this.member.getBoardList().remove(this);
+        }
+        this.member=member;
+        member.getBoardList().add(this);
+    }
+
+    // 문제 상황 5. 생성자 메소드 대신 생성해주는 메소드 사용
+    public static Board createBoard(Member member,BoardForm boardForm){
+        Board board =Board.builder()
+            .category(boardForm.getCategory())
+            .title(boardForm.getTitle())
+            .content(boardForm.getContent())
+            .author(member.getNickname())
+            .build();
+
+        board.setMember(member);
+
+        return board;
+    }
+}
+```
+
+### 리팩토링 후 코드
+
+```java
+@Entity
+@NoArgsConstructor(access = AccessLevel.PROTECTED) // 리팩토링 1. protected 접근 제어자로 생성자의 접근 제어
+// @AllArgsConstructor  리팩토링 2. 불필요한 생성자 제거  
+@Getter
+public class Board extends BaseTimeEntity {
+
+    @Id
+    @GeneratedValue
+    @Column(name="board_id")
+    private Long id;
+
+    @Enumerated(EnumType.STRING)
+    private Category category;
+
+    private String title;
+
+    private String content;
+
+    private String author;
+
+    @ManyToOne
+    @JoinColumn(name="member_id")
+    private Member member;
+
+    @OneToMany(mappedBy="board", cascade = CascadeType.REMOVE) // 리팩토링 3. 클래스 단위의 빌더 패턴 제거로 객체 생성 시 자동으로 List 초기화 
+    private List<Comment> commentList = new ArrayList<Comment>();
+
+    public void edit(BoardForm boardForm){
+        content = changedInfo(content, boardForm.getContent());
+    }
+
+    private String changedInfo(String original, String changed){
+        return (changed == null || changed.equals("")) ? original : changed;
+    }
+
+    public void setMember(Member member){
+        if(this.member!=null){
+            this.member.getBoardList().remove(this);
+        }
+        this.member=member;
+        member.getBoardList().add(this);
+    }
+
+    @Builder // 리팩토링 4. 생성자 메소드 생성 후 본 메서드에 Builder 패턴 적용  
+    public Board (Member member, BoardForm boardForm){
+        this.author = member.getNickname();
+        this.category = boardForm.getCategory();
+        this.title = boardForm.getTitle();
+        this.content = boardForm.getContent();
+        this.setMember(member);
+    }
+}
+
+```
+
 ## 결론
 
-물론 모든 상황에 다 들어맞는 것은 아닐 거라 생각한다. 각자의 환경과 상황에 알맞게 `lombok`을 사용하는 것이 가장 바람직하다.
+공부한 내용을 실제로 적용하기 위해 다시 보니까, 그 동안 얼마나 아무 생각없이 그저 제공되는 라이브러리 기능을 사용해왔는지 새로 알게 되었다. 역시 아는 만큼 보이는 것 같다..  
 
-하지만 `좋은 캡슐화`, `클린 코드`나, `유지 보수하기 좋은 코드`는 거창한 것이 아니라 이렇게 객체를 생성할 때나 메소드를 사용할 때 조금 더 생각해 보는 것으로부터 비롯된다고 생각한다.
+물론 모든 상황에 다 들어맞는 것은 아닐 것이다. 각자의 환경과 상황에 알맞게 `lombok`을 사용하는 것이 가장 바람직하다고 생각한다.
+
+`좋은 캡슐화`, `클린 코드`나, `유지 보수하기 좋은 코드`는 거창한 것이 아니라 이렇게 객체를 생성할 때나 메소드를 사용할 때 조금 더 생각해 보는 것으로부터 비롯된다고 생각한다.
