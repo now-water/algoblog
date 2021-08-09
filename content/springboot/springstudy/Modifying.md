@@ -12,7 +12,7 @@ date: '2021-07-14'
 
 ![image](https://user-images.githubusercontent.com/51476083/125461512-eeae43d1-4ede-42a9-b61d-8453dfc3dc8f.png)
 
-따라서 수정/삭제를 하는 쿼리에서는 readOnly 가 true가 되도록 해줘야하기 때문에 `@Transactional` 을 붙여준다. 일종의 Override 개념인 셈이다.
+따라서 수정/삭제를 하는 쿼리에서는 readOnly 가 false가 되도록 해줘야하기 때문에 `@Transactional` 을 붙여준다. 일종의 Override 개념인 셈이다.
 
 참고로 `@Transactional` 은 default가 `readOnly = false` 이다.
 

@@ -58,7 +58,7 @@ date: '2021-04-05'
 > public class SampleController {
 >    private SampleRepository sampleRepository;
 >
->    @Autowired
+>    @Autowired // 있어도 되고, 없어도 됨
 >    public void setSampleRepository(SampleRepository sampleRepository) {
 >        this.sampleRepository = sampleRepository;
 >    }
@@ -73,7 +73,6 @@ date: '2021-04-05'
 > public class SampleController {
 >    private SampleRepository sampleRepository;
 >
->    @Autowired
 >    public SampleController(SampleRepository sampleRepository) {
 >        this.sampleRepository = sampleRepository;
 >    }
@@ -90,6 +89,10 @@ date: '2021-04-05'
 > }
 > ```
 >
+
+이 외에도 Lombok 라이브러리를 사용해 `@AllArgsConstructor`, `@RequiredArgsConstructor` 어노테이션을 통해 자동 생성자 메소드를 사용할 수 있다.
+
+특히 `@RequiredArgsConstructor` 의 경우, 의존성을 주입받을 객체를 `private final` 로 선언되어 생성 시점에 딱 한번만 주입받을 수 있도록 하기 때문에 불필요한 변경점이 발생하지 않아 안전하다.
 
 ## 권장하는 방법
 Spring Framework Reference 에서 권장하는 방법은 `생성자를 통한 주입`이다.
