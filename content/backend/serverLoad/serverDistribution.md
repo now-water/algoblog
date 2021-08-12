@@ -12,7 +12,7 @@ date: '2021-05-24'
 
 1. VLAN을 이용한 Layer2 부하 분산
 
-2) Routing Protocol을 이용한 Layer3 부하 분산, IP와 Port를 사용한 Layer 4 서버 부하 분산
+2. Routing Protocol을 이용한 Layer3 부하 분산, IP와 Port를 사용한 Layer 4 서버 부하 분산
 
 # 서버 부하 분산(Server Load Balancing)
 
@@ -25,7 +25,7 @@ date: '2021-05-24'
 
 ## 서버 부하 분산 방법
 
-서버에게 부하를 고르게 분산하는 것도 다양한 방법이 존재한다. 서버의 능려글 고려하여 분배해야지 서버가 Down 되지 않기 때문에 서버의 상황에 맞춰 적절한 방법을 선택해야 한다. <br/>
+서버에게 부하를 고르게 분산하는 것도 다양한 방법이 존재한다. 서버의 능력을 고려하여 분배해야지 서버가 Down 되지 않기 때문에 서버의 상황에 맞춰 적절한 방법을 선택해야 한다. <br/>
 보통 `Load Balancing Method` 라고 부른다.
 
 **1. Round robin**
