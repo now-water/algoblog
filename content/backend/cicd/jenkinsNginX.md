@@ -55,13 +55,21 @@ EC2 의 EIP에 Port 80 으로 접속할 경우 위와 같은 기본 페이지가
 <br/>
 그리고 다음의 명령어들을 아래 사진처럼 추가해준다.
 
-> 1. `include conf.d/service-url.inc;` <br/>
-> 2. `proxy_pass $service_url;`
-> 3. `resolver 127.0.0.1;`
+> 1. `client_max_body_size 100M;` 
+> 2. `include conf.d/service-url.inc;` <br/>
+> 3. `proxy_pass $service_url;`
+> 4. `resolver 127.0.0.1;`
 
-![image](https://user-images.githubusercontent.com/51476083/124389801-c5f9ac00-dd23-11eb-9740-13b55be3d235.png)
+![image](https://user-images.githubusercontent.com/51476083/129363316-9eda8660-b74f-48bc-9604-1117c9bc3493.png)
 
-<br/>
+모든 설정 이후 Nginx를 재시작 해준다.
+
+- `service nginx restart`
+
+> **client_max_body_size 100M** 를 해줘야 클라이언트 측에서 큰 용량을 업로드할 수 있다.
+> 
+> 클라이언트 개발 팀원으로부터 사진 업로드가 안된다는 피드백을 받아서 확인해보니, Nginx 의 파일 업로드 디폴트가 1MB 라고 한다.. 
+
 그리고 `/etc/nginx/conf.d/` 디렉터리 안에 `service-url.inc` 파일을 생성하고 다음의 내용을 추가해준다.
 
 `set $service_url http://127.0.0.1:8089;`
