@@ -19,7 +19,7 @@ order: 1
 
 1. 루트 프로젝트의 src 디렉터리 내용을 모두 `batch` 모듈 하위로 옮기고 `gallery`의 src는 삭제한다.
 
-2) `gallery`의 `build` 디렉터리는 필요없으므로 삭제한다.
+2. `gallery`의 `build` 디렉터리는 필요없으므로 삭제한다.
 
 3. `settings.gradle` 에 신규로 생성한 모듈의 내용을 추가한다.
 
@@ -27,7 +27,7 @@ order: 1
 
    ![image](https://user-images.githubusercontent.com/51476083/106376940-c42a6600-63dc-11eb-8f3d-18d6c5dbf203.png)
 
-4) `build.gradle`에 모듈별로 설정을 추가한다.
+4. `build.gradle`에 모듈별로 설정을 추가한다.
 
    > 루트 프로젝트의 `build.gradle`에 모든 모듈의 라이브러리 설정 내용을 작성해도 되고, 각각의 모듈별 `build.gradle`에 관련 내용을 작성해도 된다. <br/>
    > 여기선 루트 프로젝트에서 내용을 작성하겠다.
@@ -120,7 +120,7 @@ order: 1
    }
    ```
 
-5) `batch`, `admin`, `pc-web`, 수정
+5. `batch`, `admin`, `pc-web`, 수정
 
 - 모듈 별로 구동하기 위해 `module/src/java/` 에 `SpringBoot Application`을 작성해준다.
 
