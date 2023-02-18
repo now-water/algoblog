@@ -1,3 +1,7 @@
+## [1.0.60](https://github.com/nowwater/algoblog/compare/v1.0.59...v1.0.60) (2023-02-18)
+
+
+
 ## [1.0.59](https://github.com/nowwater/algoblog/compare/v1.0.58...v1.0.59) (2022-08-29)
 
 
